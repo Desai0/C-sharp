@@ -263,7 +263,7 @@ class Program
                     var except = books.Except(books);
                     foreach (var book in except)
                     {
-                        Console.Write($"{book.Genre}; ");
+                        Console.Write($"{book.Genre}; "); // не работает
                     }
 
                     Console.WriteLine("\n");
@@ -272,7 +272,7 @@ class Program
                     Console.Clear();
                     q++;
 
-                    Console.WriteLine("\n");
+                    Console.WriteLine("\n"); // не работает
                     break;
             }
                 
