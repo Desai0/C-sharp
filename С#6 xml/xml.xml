@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Contacts>
+  <Contact>
+    <Name>Tom</Name>
+    <Phone>123456789</Phone>
+  </Contact>
+  <Contact>
+    <Name>Bob</Name>
+    <Phone>987654321</Phone>
+  </Contact>
+</Contacts>
