@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#5 praktika", "C#5 praktik
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "С#6 xml", "С#6 xml\С#6 xml.csproj", "{0ACDAFD8-B3D5-4E19-B8F3-5829B9AB765C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#7 SQL", "C#7 SQL\C#7 SQL.csproj", "{2D2A3407-5A9B-4A59-92CE-232C3EACD950}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{0ACDAFD8-B3D5-4E19-B8F3-5829B9AB765C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ACDAFD8-B3D5-4E19-B8F3-5829B9AB765C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ACDAFD8-B3D5-4E19-B8F3-5829B9AB765C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D2A3407-5A9B-4A59-92CE-232C3EACD950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D2A3407-5A9B-4A59-92CE-232C3EACD950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D2A3407-5A9B-4A59-92CE-232C3EACD950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D2A3407-5A9B-4A59-92CE-232C3EACD950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
