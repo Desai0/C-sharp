@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "С#6 xml", "С#6 xml\С#6 x
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#7 SQL", "C#7 SQL\C#7 SQL.csproj", "{2D2A3407-5A9B-4A59-92CE-232C3EACD950}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#7 SQL2", "C#7 SQL2\C#7 SQL2.csproj", "{98DF7CAD-8E29-442F-A97F-597FD294FF4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{2D2A3407-5A9B-4A59-92CE-232C3EACD950}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D2A3407-5A9B-4A59-92CE-232C3EACD950}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D2A3407-5A9B-4A59-92CE-232C3EACD950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98DF7CAD-8E29-442F-A97F-597FD294FF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98DF7CAD-8E29-442F-A97F-597FD294FF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98DF7CAD-8E29-442F-A97F-597FD294FF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98DF7CAD-8E29-442F-A97F-597FD294FF4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
