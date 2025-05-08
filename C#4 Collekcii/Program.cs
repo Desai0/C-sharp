@@ -32,6 +32,6 @@ class Program
 
         ints.Reverse(); //переворачивает лист
 
-        ints.Count() // число элементов в листе
+        ints.Count(); // число элементов в листе
     }
 }
