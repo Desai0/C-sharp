@@ -3,33 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "С#2", "С#2\С#2.csproj", "{F30CBBA2-BE10-4146-939A-0196365B6314}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - Baza", "С#2\02 - Baza.csproj", "{F30CBBA2-BE10-4146-939A-0196365B6314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#3 teoriya", "C#3\C#3 teoriya.csproj", "{B8B4966B-8F53-4936-81F4-AE73D7ADE756}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Baza", "C#3\03 - Baza.csproj", "{B8B4966B-8F53-4936-81F4-AE73D7ADE756}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#3 praktika", "C#3 praktika\C#3 praktika.csproj", "{F861A5EE-3011-4582-94E7-F77404C22FFC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Praktika", "C#3 praktika\03 - Praktika.csproj", "{F861A5EE-3011-4582-94E7-F77404C22FFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#3 praktika2 massive", "C#3 praktika2 massive\C#3 praktika2 massive.csproj", "{AB065867-E7E9-4B19-A795-23E2264C1F4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03 - Praktika2", "C#3 praktika2 massive\03 - Praktika2.csproj", "{AB065867-E7E9-4B19-A795-23E2264C1F4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#4 Collekcii", "C#4 Collekcii\C#4 Collekcii.csproj", "{3C481D27-A873-464C-B0A1-BE920F987548}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Collections", "C#4 Collekcii\04 - Collections.csproj", "{3C481D27-A873-464C-B0A1-BE920F987548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#4 mnozhestva", "C#4 mnozhestva\C#4 mnozhestva.csproj", "{A524D985-62D3-41EA-AD22-AFAEEAC7FE47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Mnozhestva", "C#4 mnozhestva\04 - Mnozhestva.csproj", "{A524D985-62D3-41EA-AD22-AFAEEAC7FE47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "С#4 Stack", "С#4 Stack\С#4 Stack.csproj", "{630121AA-1E04-4334-9DC7-99959F81E4FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Stack", "С#4 Stack\04 - Stack.csproj", "{630121AA-1E04-4334-9DC7-99959F81E4FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C# Slovar", "C# Slovar\C# Slovar.csproj", "{E834BF5E-8CDE-4448-B760-F279609EFEC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - Slovar", "C# Slovar\05 - Slovar.csproj", "{E834BF5E-8CDE-4448-B760-F279609EFEC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#4 praktika", "C#4 praktika\C#4 praktika.csproj", "{E8202A92-AE10-49A7-A66C-A02781ED2F5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04 - Praktika", "C#4 praktika\04 - Praktika.csproj", "{E8202A92-AE10-49A7-A66C-A02781ED2F5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#5 lyambda", "C#5 lyambda\C#5 lyambda.csproj", "{4546A13D-03C7-41F7-A241-DDEA9A5A10B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - Lyambda", "C#5 lyambda\05 - Lyambda.csproj", "{4546A13D-03C7-41F7-A241-DDEA9A5A10B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#5 praktika", "C#5 praktika\C#5 praktika.csproj", "{78DAD105-FB14-48C9-9564-B7B3712713D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05 - Praktika", "C#5 praktika\05 - Praktika.csproj", "{78DAD105-FB14-48C9-9564-B7B3712713D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "С#6 xml", "С#6 xml\С#6 xml.csproj", "{0ACDAFD8-B3D5-4E19-B8F3-5829B9AB765C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06 - XML", "С#6 xml\06 - XML.csproj", "{0ACDAFD8-B3D5-4E19-B8F3-5829B9AB765C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#7 SQL", "C#7 SQL\C#7 SQL.csproj", "{2D2A3407-5A9B-4A59-92CE-232C3EACD950}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - SQL", "C#7 SQL\07 - SQL.csproj", "{2D2A3407-5A9B-4A59-92CE-232C3EACD950}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C#7 SQL2", "C#7 SQL2\C#7 SQL2.csproj", "{98DF7CAD-8E29-442F-A97F-597FD294FF4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07 - SQL2", "C#7 SQL2\07 - SQL2.csproj", "{98DF7CAD-8E29-442F-A97F-597FD294FF4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "69 - HomeWork", "69 - HomeWork\69 - HomeWork.csproj", "{B3DA7B3E-3A58-4BF2-9BB5-153C60DADD8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework", "Homework", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,9 +97,16 @@ Global
 		{98DF7CAD-8E29-442F-A97F-597FD294FF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98DF7CAD-8E29-442F-A97F-597FD294FF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98DF7CAD-8E29-442F-A97F-597FD294FF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3DA7B3E-3A58-4BF2-9BB5-153C60DADD8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3DA7B3E-3A58-4BF2-9BB5-153C60DADD8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3DA7B3E-3A58-4BF2-9BB5-153C60DADD8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3DA7B3E-3A58-4BF2-9BB5-153C60DADD8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3DA7B3E-3A58-4BF2-9BB5-153C60DADD8E} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39D57FC5-092D-4EB6-9B2A-9596C698DD0A}
