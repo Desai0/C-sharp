@@ -6,8 +6,8 @@ class Programm
     {
         Dictionary<string, int> dic = new Dictionary<string, int>();
 
-        dic.Add("Ann, 25");
-        dic.Add("Tom, 30");
+        dic.Add("Ann", 25);
+        dic.Add("Tom", 30);
 
         dic["Ann"] = 33; // изменит знач
         dic["Sam"] = 33; // добавит
