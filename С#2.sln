@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homework", "Homework", "{7E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "69 - Homework", "Homework\69 - Homework\69 - Homework.csproj", "{90752D39-320D-4C37-B4A3-38FCB0CA52B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "70 - Homework", "Homework\70 - Homework\70 - Homework.csproj", "{47AF33ED-E044-4151-921B-A07476755B13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,12 +103,17 @@ Global
 		{90752D39-320D-4C37-B4A3-38FCB0CA52B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90752D39-320D-4C37-B4A3-38FCB0CA52B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90752D39-320D-4C37-B4A3-38FCB0CA52B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47AF33ED-E044-4151-921B-A07476755B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AF33ED-E044-4151-921B-A07476755B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AF33ED-E044-4151-921B-A07476755B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AF33ED-E044-4151-921B-A07476755B13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{90752D39-320D-4C37-B4A3-38FCB0CA52B6} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
+		{47AF33ED-E044-4151-921B-A07476755B13} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39D57FC5-092D-4EB6-9B2A-9596C698DD0A}
