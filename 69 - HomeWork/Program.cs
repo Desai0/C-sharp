@@ -49,7 +49,7 @@ class Program
                     break;
                 case 3:
                     Console.Clear();
-                    q = 1;
+                    q = 69;
                     break;
             }
         }
