@@ -175,6 +175,11 @@ class Program
 
         var squares = nums.Select(x => x * x);
 
+        foreach (var name in squares)
+        {
+            Console.WriteLine(name);
+        }
+
         var squares2 = from x in squares
                        select x;
 
