@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "71.2 - Homework", "Homework
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "72 - Homework LINQ", "Homework\72 - Homework LINQ\72 - Homework LINQ.csproj", "{3E31025F-F267-434B-A5BB-1D896E36C974}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "73 - Homework XML", "Homework\73 - Homework XML\73 - Homework XML\73 - Homework XML.csproj", "{A2884034-A2F4-4A98-8976-9CF5D56DE07F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -125,6 +127,10 @@ Global
 		{3E31025F-F267-434B-A5BB-1D896E36C974}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E31025F-F267-434B-A5BB-1D896E36C974}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E31025F-F267-434B-A5BB-1D896E36C974}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2884034-A2F4-4A98-8976-9CF5D56DE07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2884034-A2F4-4A98-8976-9CF5D56DE07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2884034-A2F4-4A98-8976-9CF5D56DE07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2884034-A2F4-4A98-8976-9CF5D56DE07F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +141,7 @@ Global
 		{5C537A68-B997-44EE-BEA0-379D9B2D5115} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
 		{FBAE78F2-9BED-4720-97F0-392AF1AD8F40} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
 		{3E31025F-F267-434B-A5BB-1D896E36C974} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
+		{A2884034-A2F4-4A98-8976-9CF5D56DE07F} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39D57FC5-092D-4EB6-9B2A-9596C698DD0A}
