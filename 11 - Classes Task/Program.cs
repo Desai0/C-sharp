@@ -44,7 +44,6 @@ class Program
                     Console.WriteLine($"Баланс {seller.Name} до: {seller.Money}");
 
                     // 2. Вызываем метод ProcessPayment, используя ref для seller и user
-                    // В вашем контексте: user - это sender (отправитель), seller - это getter (получатель)
                     payPalService.ProcessPayment(ref seller, ref user, givingMoney);
 
                     Console.WriteLine($"\nРезультат операции:");
