@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Shops.Entities
+namespace _11___Classes_Task.Entities
 {
     public class Buyer
     {
-        private string _name;
-        private int _money;
+        public string _name;
+        public int _money;
 
         public Buyer(string name, int money)
         {
@@ -25,7 +25,10 @@ namespace Shops.Entities
             _money -= sum;
         }
 
-        
+        public void Getting(int sum)
+        {
+            _money += sum;
+        }
     }
-}
 
+}
