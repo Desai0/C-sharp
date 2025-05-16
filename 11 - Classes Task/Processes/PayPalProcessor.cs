@@ -15,13 +15,17 @@ namespace _11___Classes_Task.Processes
             if (sender.Money < Sum)
             {
                 RefundPayment(ref getter, ref sender, Sum);
+            } else
+            {
+                getter.Getting(Sum);
+                sender.Paying(Sum);
             }
         }
 
         public void RefundPayment(ref Buyer getter, ref Buyer sender, int Sum)
         {
-            getter.Getting(Sum);
-            sender.Paying(Sum);
+            getter.Paying(Sum);
+            sender.Getting(Sum);
         }
     }
 }

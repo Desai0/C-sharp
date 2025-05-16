@@ -9,6 +9,6 @@ namespace _11___Classes_Task
 {
     internal interface IPaymentValidator
     {
-        bool ValidatePayment(Buyer getter, Buyer setter, Buyer getterOld, Buyer setterOld, int Sum);
+        bool ValidatePayment(Buyer getter, Buyer setter, int Sum, int OldGetter, int OldSetter);
     }
 }
