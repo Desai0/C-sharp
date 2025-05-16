@@ -98,3 +98,19 @@ class Program
         }
     }
 }
+
+
+//Задание 2
+//Разработайте систему бронирования для туристического агентства:
+//Создайте абстрактный класс Reservation с:
+//Свойствами: ReservationID, CustomerName, StartDate, EndDate
+//Абстрактным методом CalculatePrice()
+//Виртуальным методом DisplayDetails()
+//Создайте производные классы:
+//HotelReservation(добавляет RoomType и MealPlan)
+//FlightReservation(добавляет DepartureAirport и ArrivalAirport)
+//CarRentalReservation(добавляет CarType и InsuranceOptions)
+//Создайте класс BookingSystem с методами:
+//CreateReservation(reservationType)
+//CancelReservation(reservationID)
+//GetTotalBookingValue()
