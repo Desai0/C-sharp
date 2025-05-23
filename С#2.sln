@@ -69,6 +69,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14 - Async", "14 - Async\14
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14 - Async Primer", "14 - Async Primer\14 - Async Primer.csproj", "{AF8039BB-C86E-4B30-8E16-E69777A2A255}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Magisk_Project", "Project\Magisk_Project\Magisk_Project.csproj", "{BE459AF3-EEDF-428C-98E0-E31F16870452}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +207,10 @@ Global
 		{AF8039BB-C86E-4B30-8E16-E69777A2A255}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF8039BB-C86E-4B30-8E16-E69777A2A255}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF8039BB-C86E-4B30-8E16-E69777A2A255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE459AF3-EEDF-428C-98E0-E31F16870452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE459AF3-EEDF-428C-98E0-E31F16870452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE459AF3-EEDF-428C-98E0-E31F16870452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE459AF3-EEDF-428C-98E0-E31F16870452}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -214,6 +222,7 @@ Global
 		{FBAE78F2-9BED-4720-97F0-392AF1AD8F40} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
 		{3E31025F-F267-434B-A5BB-1D896E36C974} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
 		{A2884034-A2F4-4A98-8976-9CF5D56DE07F} = {7E432D8F-0A0D-4A5B-BF6F-87566338CBC6}
+		{BE459AF3-EEDF-428C-98E0-E31F16870452} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {39D57FC5-092D-4EB6-9B2A-9596C698DD0A}
