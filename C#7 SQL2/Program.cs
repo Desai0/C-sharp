@@ -26,6 +26,34 @@ public class AppDbContext : DbContext
 
 class Program
 {
+    static void DisplayBookDetails(Book b, string prefix = "")
+    {
+        if (b == null)
+        {
+            Console.WriteLine(prefix + "Книга не найдена.");
+            return;
+        }
+        Console.WriteLine($"{prefix}{b.Id}: {b.Author}, \"{b.Title}\" - {b.Genre}");
+        Console.WriteLine($"{prefix}Дата публикации: {b.PublicationYear}, страниц: {b.Pages}, цена: {b.Price:C}"); // Added currency format for price
+        Console.WriteLine($"{prefix}Доступность: {(b.IsAvailable ? "Да" : "Нет")}, рейтинг: {b.Rating}");
+        Console.WriteLine($"{prefix}Краткое описание: {b.Describtion}\n");
+    }
+
+    // Helper method to display a list of books
+    static void DisplayBooksList(IEnumerable<Book> books, string title = "Список книг:")
+    {
+        Console.WriteLine(title);
+        if (!books.Any())
+        {
+            Console.WriteLine("Книги, соответствующие критериям, не найдены.");
+            return;
+        }
+        foreach (var b in books)
+        {
+            DisplayBookDetails(b);
+        }
+    }
+
     static void Main()
     {
         var context = new AppDbContext();
@@ -224,62 +252,189 @@ class Program
                     break;
 
                 case 2:
-                    Console.Write("\nВведите id книги: ");
-                    int chos = int.Parse(Console.ReadLine());
-                    var book = context.Books.Find(chos);
-
-                    Console.Write("\nВведите что хотите поменять (Тут мы должны были спросить что хотим поменять " +
-                        "но из-за этого получалось бы огромноге дерево if'a так что меняем только название): ");
-                    string chos1 = Console.ReadLine();
-
-                    if (book != null)
+                    Console.Clear();
+                    Console.WriteLine("--- Обновление названия книги ---");
+                    Console.Write("Введите ID книги для обновления: ");
+                    if (!int.TryParse(Console.ReadLine(), out int bookIdToUpdate))
                     {
-                        book.Title = chos1;
+                        Console.WriteLine("Некорректный ID.");
+                        break;
+                    }
 
+                    var bookToUpdate = context.Books.Find(bookIdToUpdate);
+
+                    if (bookToUpdate != null)
+                    {
+                        Console.WriteLine("Текущее название: " + bookToUpdate.Title);
+                        Console.Write("Введите новое название книги: ");
+                        string newTitle = Console.ReadLine();
+                        bookToUpdate.Title = newTitle;
                         context.SaveChanges();
-                        Console.WriteLine($"Название книги изменено на {book.Title} обновлена до {chos1}.");
+                        Console.WriteLine($"Название книги с ID {bookIdToUpdate} успешно изменено на \"{newTitle}\".");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Книга с ID {bookIdToUpdate} не найдена.");
                     }
                     break;
 
                 case 3:
+                    Console.Clear();
+                    Console.WriteLine("--- Удаление книги ---");
+                    Console.Write("Введите ID книги для удаления: ");
+                    if (!int.TryParse(Console.ReadLine(), out int bookIdToDelete))
+                    {
+                        Console.WriteLine("Некорректный ID.");
+                        break;
+                    }
+
+                    var bookToDelete = context.Books.Find(bookIdToDelete);
+                    if (bookToDelete != null)
+                    {
+                        context.Books.Remove(bookToDelete);
+                        context.SaveChanges();
+                        Console.WriteLine($"Книга \"{bookToDelete.Title}\" (ID: {bookIdToDelete}) успешно удалена.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Книга с ID {bookIdToDelete} не найдена.");
+                    }
                     break;
 
                 case 4:
+                    Console.Clear();
+                    Console.WriteLine("--- Поиск книги по автору ---");
+                    Console.Write("Введите имя автора для поиска: ");
+                    string authorToSearch = Console.ReadLine();
+                    var booksByAuthor = context.Books
+                                         .Where(b => b.Author.ToLower().Contains(authorToSearch.ToLower()))
+                                         .ToList();
+                    DisplayBooksList(booksByAuthor, $"Книги автора \"{authorToSearch}\":");
                     break;
 
                 case 5:
+                    Console.Clear();
+                    Console.WriteLine("--- Поиск книги по жанру ---");
+                    Console.Write("Введите жанр для поиска: ");
+                    string genreToSearch = Console.ReadLine();
+                    var booksByGenre = context.Books
+                                        .Where(b => b.Genre.ToLower().Contains(genreToSearch.ToLower()))
+                                        .ToList();
+                    DisplayBooksList(booksByGenre, $"Книги жанра \"{genreToSearch}\":");
                     break;
 
                 case 6:
+                    Console.Clear();
+                    Console.WriteLine("--- Поиск книги по году публикации ---");
+                    Console.Write("Введите год публикации: ");
+                    if (!int.TryParse(Console.ReadLine(), out int yearToSearch))
+                    {
+                        Console.WriteLine("Некорректный год.");
+                        break;
+                    }
+                    var booksByYear = context.Books
+                                       .Where(b => b.PublicationYear == yearToSearch)
+                                       .ToList();
+                    DisplayBooksList(booksByYear, $"Книги, опубликованные в {yearToSearch} году:");
                     break;
 
                 case 7:
+                    Console.Clear();
+                    Console.WriteLine("--- Поиск книг до указанной цены ---");
+                    Console.Write("Введите максимальную цену: ");
+                    if (!double.TryParse(Console.ReadLine(), out double maxPrice))
+                    {
+                        Console.WriteLine("Некорректная цена.");
+                        break;
+                    }
+                    var booksUnderPrice = context.Books
+                                           .Where(b => b.Price <= maxPrice)
+                                           .OrderBy(b => b.Price)
+                                           .ToList();
+                    DisplayBooksList(booksUnderPrice, $"Книги ценой до {maxPrice:C}:");
                     break;
 
                 case 8:
+                    Console.Clear();
+                    Console.WriteLine("--- Поиск по ключевым словам в описании ---");
+                    Console.Write("Введите ключевые слова для поиска в описании: ");
+                    string keywords = Console.ReadLine();
+                    var booksByKeywords = context.Books
+                                           .Where(b => b.Describtion.ToLower().Contains(keywords.ToLower()))
+                                           .ToList();
+                    DisplayBooksList(booksByKeywords, $"Книги, в описании которых есть \"{keywords}\":");
                     break;
 
                 case 9:
+                    Console.Clear();
+                    Console.WriteLine("--- Средний рейтинг книг по жанру ---");
+                    Console.Write("Введите жанр для расчета среднего рейтинга: ");
+                    string genreForAvgRating = Console.ReadLine();
+                    var booksInGenreForAvg = context.Books
+                                              .Where(b => b.Genre.ToLower() == genreForAvgRating.ToLower())
+                                              .ToList();
+                    if (booksInGenreForAvg.Any())
+                    {
+                        double avgRating = booksInGenreForAvg.Average(b => b.Rating);
+                        Console.WriteLine($"Средний рейтинг книг в жанре \"{genreForAvgRating}\": {avgRating:F2}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Книги в жанре \"{genreForAvgRating}\" не найдены.");
+                    }
                     break;
 
                 case 10:
+                    Console.Clear();
+                    Console.WriteLine("--- Общее количество страниц ---");
+                    if (context.Books.Any())
+                    {
+                        int totalPages = context.Books.Sum(b => b.Pages);
+                        Console.WriteLine($"Общее количество страниц всех книг в библиотеке: {totalPages} страниц.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("В библиотеке нет книг для подсчета страниц.");
+                    }
                     break;
 
                 case 11:
+                    Console.Clear();
+                    Console.WriteLine("--- Самая дорогая и самая дешевая книга ---");
+                    if (context.Books.Any())
+                    {
+                        var cheapestBook = context.Books.OrderBy(b => b.Price).FirstOrDefault();
+                        var mostExpensiveBook = context.Books.OrderByDescending(b => b.Price).FirstOrDefault();
+
+                        Console.WriteLine("Самая дешевая книга:");
+                        DisplayBookDetails(cheapestBook);
+
+                        Console.WriteLine("Самая дорогая книга:");
+                        DisplayBookDetails(mostExpensiveBook);
+                    }
+                    else
+                    {
+                        Console.WriteLine("В библиотеке нет книг для определения самой дорогой и дешевой.");
+                    }
                     break;
 
                 case 12:
-                    q = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Выход из программы...");
+                    q = 1;
                     break;
 
-
+                default:
+                    Console.WriteLine("Неверный выбор. Пожалуйста, выберите действие из списка.");
+                    break;
             }
 
-            // Чтобы айди не добавлялся поверх с каждым запуском
-            context.Database.ExecuteSqlRaw(@"TRUNCATE TABLE ""Books"" RESTART IDENTITY;");
+            if (q == 0)
+            {
+                Console.WriteLine("\nНажмите любую клавишу для продолжения...");
+                Console.ReadKey();
+            }
 
-
-
+            //context.Database.ExecuteSqlRaw(@"TRUNCATE TABLE ""Books"" RESTART IDENTITY;");
 
         }
 
